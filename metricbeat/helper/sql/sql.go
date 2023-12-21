@@ -197,11 +197,7 @@ func SwitchDriverName(d string) string {
 	switch d {
 	case "oracle":
 		return "godror"
-	case "cockroachdb":
-		return "postgres"
-	case "cockroach":
-		return "postgres"
-	case "postgresql":
+	case "cockroachdb", "cockroach", "postgresql":
 		return "postgres"
 	}
 
